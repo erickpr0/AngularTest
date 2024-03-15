@@ -1,0 +1,31 @@
+<!-- Banner -->
+<div class="container bg-danger text-center py-2 col-md-6 rounded mt-2">
+    <h2 class="text-white">Angular Test</h2>
+        <button (click)="consumirApi()" class="btn btn-light mt-2">Cargar Datos</button>
+</div>
+
+<div class="container col-md-6 rounded mt-4 bg-danger-subtle p-4" *ngIf="paginationVisible">
+    <div class="row">
+      <div class="col-md-4 mb-3" *ngFor="let dato of data | paginate: { itemsPerPage: 12, currentPage: p }">
+        <div class="card">
+          <img [src]="dato.flagPNG" class="card-img-top imagen-tarjeta" alt="Imagen">
+          <div class="card-body">
+            <h5 class="card-title">{{ dato.name }}</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container col-md-6 rounded mt-4 text-center" *ngIf="paginationVisible">
+    <pagination-controls (pageChange)="p = $event" class="pagination-centered"></pagination-controls>
+</div>
+
+
+  
+
+  
+
+
+
+

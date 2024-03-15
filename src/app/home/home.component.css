@@ -1,0 +1,38 @@
+.imagen-tarjeta {
+    width: 100%;
+    object-fit: cover; 
+  }
+
+  /* Estilos para pantallas pequeñas */
+@media (max-width: 576px) {
+    .imagen-tarjeta {
+      height: 50vw; 
+    }
+  }
+  
+  /* Estilos para pantallas medianas */
+  @media (min-width: 576px) and (max-width: 768px) {
+    .imagen-tarjeta {
+      height: 30vw; 
+    }
+  }
+  
+  /* Estilos para pantallas grandes */
+  @media (min-width: 768px) {
+    .imagen-tarjeta {
+      height: 8vw; 
+    }
+  }
+
+  .pagination-container {
+    margin-top: 20px; 
+  }
+
+
+  
+  
+
+
+
+
+
